@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plataforma de información para el Sistema de Indicadores de Derechos Humanos de la Ciudad de México</title>
+
+	    <link href="/favicon.ico" rel="shortcut icon">
+	    
+	    <link href="css/theme.css" rel="stylesheet">
+		<link href="css/principal.css" rel="stylesheet">
+		<link href="css/hexagons.css" rel="stylesheet" type="text/css" >
+	    
+	    <script src="js/lib/d3.js"></script>
+	    <script src="js/lib/jquery-3.3.1.min.js"></script>
+	    <script src="js/lib/vendor.js"></script>
+		<script src="js/lib/framework.js"></script>
+
+	    <script src="js/idDerechos.js" ></script>
+        <script src="js/tablaDerechos.js" ></script>
+        <script> 
+		    $(function(){
+		      $("#placeHeader").load("Header.html"); 
+		      $("#placeFooter").load("footer.html"); 
+		    });
+	    </script> 
+	</head>
+	<body id="top">
+		<div id="placeHeader"></div>
+		<main>	
+	      <div class="container">
+	      	<div class="Accordion-elements">
+		      	<div class="Accordion-heading" role="tab">
+			        <div class="Title">
+			            <h2>
+			                Objetivo
+			            </h2>
+			        </div>
+			        <div class="Accordion-heading-action">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseObj" aria-expanded="true" aria-controls="collapseOne" class="">
+			            </a>
+			        </div>
+		    	</div>
+		    	<div id="collapseObj" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+		    		<div class="Text">
+			    		<h3>¿Qué es el Sistema de Indicadores de Derechos Humanos de la Ciudad de México?</h3>
+						<p>El Sistema Nacional para la Evaluación del Nivel de Cumplimiento de los Derechos Humanos se apoya en una plataforma que conjunta indicadores de progreso de los derechos humanos que permiten valorar el cumplimiento de los compromisos establecidos en los tratados internacionales de los que el Estado Mexicano es parte. Es decir, miden los niveles de goce y ejercicio de los derechos humanos, que el Estado mexicano se comprometió a dar cumplimiento, de las personas que habitan o transitan por el territorio nacional.</p>
+						<p>Estos indicadores utilizan dos metodologías concurrentes y validadas por las autoridades internacionales de derechos humanos: el Alto Comisionado de las Naciones Unidas para los Derechos Humanos (ACNUDH) y la Organización de los Estados Americanos (OEA). Al utilizar estas metodologías, el Estado mexicano obtiene una herramienta que le permite medir y monitorear el cumplimiento la realización progresiva de los derechos humanos contenidos en los tratados internacionales de los que el Estado Mexicano es parte, así como de las condiciones que favorecen o limitan la posibilidad de acceso efectivo a los derechos.</p>
+						<p>El Sistema Nacional para la Evaluación del Nivel de Cumplimiento de los Derechos Humanos, por lo tanto, es una herramienta efectiva para la evaluación, seguimiento y mejora de las políticas públicas en el ámbito de los derechos humanos, ya que los indicadores que contiene pueden aportar al proceso de diseño de políticas públicas tendientes a asegurar el cumplimiento del conjunto de los derechos humanos.</p>
+						<p>La primera etapa de este componente incorpora los indicadores para los derechos económicos, sociales, culturales y ambientales (DESCA), definidos a partir de los lineamientos establecidos en el Sistema Interamericano de Derechos Humanos para dar seguimiento al Protocolo adicional a la Convención Americana sobre Derechos Humanos en materia de Derechos Económicos, Sociales y Culturales “Protocolo de San Salvador” (PSS).</p>
+						<p>El Sistema Nacional de Evaluación del nivel de cumplimiento de los Derechos Humanos (SNEDH) pretende mejorar la acción estatal en materia de derechos humanos, a partir del establecimiento de procesos sólidos y permanentes de evaluación y diagnóstico. Los objetivos específicos planteados para el sistema consideran: impulsar la transparencia y rendición de cuentas en materia de derechos humanos; promover procesos independientes de evaluación integral de la situación de derechos humanos en México; así como, generar bases de información pertinente para evaluación de las políticas públicas en materia de derechos humanos.</p>
+		    		</div>
+		    	</div>
+	      	</div>
+	      	
+	      	<div class="Accordion-elements">
+		      	<div class="Accordion-heading" role="tab">
+			        <div class="Title">
+			            <h2>
+			                Derechos
+			            </h2>
+			        </div>
+			        <div class="Accordion-heading-action">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseDer0" aria-expanded="true" aria-controls="collapseOne" class="">
+			            </a>
+			        </div>
+		    	</div>
+		    	<div id="collapseDer0" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+		    		<div id="hex_derechos" class="container"></div>
+		    		<div id="espacio_tabla_indicadores" class="container"></div>
+		    	</div>
+	      	</div>
+	      	
+	      	
+	      	
+			<div class="FullContent">
+				<div class="Wrapper Wrapper-twinlist">
+					<div class="Wrapper-child--c6">
+						<div class="Panel-empty Listing">
+						<div class="Title"><h2>Tratados Internacionales</h2></div>
+						<div class="List List-chevron">
+							<ul>
+								<li><a target="_blank" href="https://www.oas.org/juridico/spanish/tratados/a-52.html">Protocolo de San Salvador (PSS)</a></li>
+								<li><a target="_blank" href="http://www.ohchr.org/SP/ProfessionalInterest/Pages/CESCR.aspx">Pacto Internacional de Derechos Económicos, Sociales y Culturales (PIDESC)</a></li>
+								<li><a target="_blank" href="http://www.ohchr.org/SP/ProfessionalInterest/Pages/OPCESCR.aspx">Protocolo Facultativo del Pacto Internacional de Derechos Económicos, Sociales y Culturales (PFPIDESC)</a></li>
+								<li><a target="_blank" href="http://www.ohchr.org/SP/ProfessionalInterest/Pages/CCPR.aspx">Pacto Internacional de Derechos Civiles y Políticos (PIDCP)</a></li>
+								<li><a target="_blank" href="http://tbinternet.ohchr.org/_layouts/treatybodyexternal/TBSearch.aspx?Lang=en&TreatyID=9&DocTypeID=11">Página de Observaciones Generales del CDESC</a></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="Wrapper-child--c6">
+						<div class="Panel-empty Listing">
+						<div class="Title"><h2>Metodología de indicadores de derechos humanos</h2></div>
+						<div class="List List-chevron">
+							<ul>
+								<li><a target="_blank" href="https://documents-dds-ny.un.org/doc/UNDOC/GEN/G08/419/51/PDF/G0841951.pdf?OpenElement">Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos - Informe Sobre Los Indicadores para Promover y Vigilar el Ejercicio de los Derechos Humanos (HRI/MC/2008/3)</a></li>
+								<li><a target="_blank" href="https://www.oas.org/en/sedi/pub/indicadores_progreso.pdf">Grupo de Trabajo para el análisis de los informes nacionales previstos en el Protocolo de San Salvador - Indicadores de progreso para la medición de derechos contemplados en el Protocolo de San Salvador</a></li>
+								<li><a target="_blank" href="http://www.ohchr.org/Documents/Publications/Human_rights_indicators_sp.pdf">Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos - Indicadores de derechos humanos: Guía para la medición y la aplicación</a></li>
+								<li><a target="_blank" href="http://www.acnur.org/fileadmin/Documentos/BDL/2016/10528.pdf?view=1">Asamblea General de la Organización de Estados Americanos - Adopción del Mecanismo de Seguimiento para la Implementación del Protocolo De San Salvador</a> </li>
+								<li><a target="_blank" href="http://www.pudh.unam.mx/mecanismo_de_seguimiento_convencion_Belem_Do_Para-MESECVI.html">Mecanismo de Seguimiento de la Convención de Belém do Pará - Indicadores de progreso para la medición de la implementación de la Convención Interamericana para prevenir, sancionar y erradicar la violencia contra la mujer "Convención de Belém Do Pará"</a></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+
+		</div>
+		<div id="BackTop" style="display: block;" class="in"><a href="#" id="BackTop-action"></a></div>
+		</main>
+		<div id="placeFooter"></div>
+	</body>
+</html>

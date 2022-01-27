@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>PRUEBA</h1>
+    <main></main>
+    <script>
+      data = [];
+      datos = [];
+      data = [
+        {
+          Periodo: "2002",
+          "EROSIÓN HÍDRICA": "9 444 982.38",
+          "EROSIÓN EÓLICA": "16329158.23",
+          "DEGRADACIÓN QUÍMICA": "14182193.19",
+          "DEGRADACIÓN FÍSICA": "3601219.342",
+          sa: "857309.3455",
+          SN: "1 909 253.94",
+          SAD: "42.9",
+        },
+      ];
+    //   DATA
+      for (const key in data) {
+        arr = [];
+        let keys = Object.keys(data[key]);
+        let values = Object.values(data[key]);
+
+        keys.forEach((element) => {
+            console.log(element);
+          let lower = element.toLowerCase();
+          let normalize = lower
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+          let replaceSpace = normalize.split(" ").join("-");
+          let result = replaceSpace.split("_").join("-");
+          arr.push(result);
+          console.log(arr);
+        });
+        // data.pop();
+
+        function convertToObj(arr, values) {
+          let obj = {};
+
+          arr.forEach((k, i) => {
+            obj[k] = values[i];
+          });
+          return obj;
+        }
+        let final = convertToObj(arr, values);
+        datos.push(final);
+      }
+    //   DATA
+
+      console.log(datos);
+      console.log(data);
+    </script>
+  </body>
+</html>

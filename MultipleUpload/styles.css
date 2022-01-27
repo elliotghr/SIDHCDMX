@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30vw;
+}
+.form button {
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.success {
+  color: #009200;
+  /* padding: 2rem; */
+  /* font-size: 1.5rem; */
+}
+.failure {
+  color: rgb(163, 4, 4);
+  /* font-size: 1.5rem; */
+}

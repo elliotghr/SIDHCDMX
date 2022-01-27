@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plataforma de información para el Sistema de Indicadores de Derechos Humanos de la Ciudad de México</title>
+
+	    <link href="css/theme.css" rel="stylesheet">
+		<link href="css/leaflet.css" rel="stylesheet">
+        <link href="css/billboard.css" rel="stylesheet">
+		<link href="css/principal.css" rel="stylesheet">
+	    <link href="css/indicador.css"  rel="stylesheet">
+		
+	    <script src="js/lib/jquery-3.3.1.min.js"></script>
+	    <script src="js/lib/vendor.js"></script>
+		<script src="js/lib/framework.js"></script>
+		<script src="js/lib/d3.js"></script>
+        <script src="js/lib/xlsx.full.min.js"></script>
+        <script src="js/lib/FileSaver.min.js"></script>
+        <script src="js/lib/saveSvgAsPng.js"></script> 
+        
+        <script src="js/idDerechos.js" ></script>
+        <script src="js/indicador.js"></script>
+        <script src="js/graficasIndicador.js"></script>
+        
+        <script> 
+		    $(function(){
+		      $("#placeHeader").load("Header.html"); 
+		      $("#placeFooter").load("footer.html"); 
+		    });
+	    </script>
+
+        <!-- scrips para el mapa -->
+        <script src="js/lib/leaflet.js"></script>
+        <script src="js/lib/dom-to-image.min.js"></script>
+        
+        
+        <script src="js/lib/billboard.js"></script>
+        <script src="js/lib/classybrew.min.js"></script>
+        <script src="js/mapaentidades.js"></script>
+        
+        <!-- fórmulas -->
+        <script type="text/x-mathjax-config">
+              MathJax.Hub.Config({
+                extensions: ["tex2jax.js"],
+                jax: ["input/TeX", "output/HTML-CSS"],
+                tex2jax: {
+                  inlineMath: [ ['$*','$*'] ],
+                  displayMath: [ ['$$','$$'] ],
+                  processEscapes: true
+                },
+                "HTML-CSS": { availableFonts: ["TeX"] }
+              });
+        </script>
+        <script type="text/javascript" async src="js/mj/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+	</head>
+	<body id="top">
+		<div id="placeHeader"></div>
+		<main>
+			<div class="container">
+    			<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="index.html"><i class="icon icon-home"></i> SIDHCDMX</a></li>
+						<li class=""><a href="derechos.html">Derechos</a></li>
+		                <li class=""><span id="derechoInd">...</span></li>
+		                <li class=""><span id="categoriaInd">...</span></li>
+		                <li class="active"><span id="claveInd">...</span></li>
+					</ol>
+				</div>	      	
+		      	<div class="Accordion-elements" id="AccordionInd">
+			      	<div class="Accordion-heading" role="tab">
+				        <div class="Title">
+				            <h1>
+				                [Indicador]
+				            </h1>
+				        </div>
+				        <div class="Accordion-heading-action">
+				            <a data-toggle="collapse" data-parent="#accordion" href="#collapseInd1" aria-expanded="true" aria-controls="collapseOne" class="">
+				            </a>
+				        </div>
+			    	</div>
+			    	<div id="collapseInd1" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+				      <div class="container">
+				      	<div id="contenedor_indicador_cuanti">
+				      		<ul class="nav nav-tabs" id="pestañitas">
+				      			<li class="active">
+				      				<a data-toggle="tab" href="#tab-indicador" aria-expanded="true">Indicador</a>
+				      			</li>
+				      			<li class="">
+				      				<a data-toggle="tab" href="#tab-metadatos" aria-expanded="false">Metadatos</a>
+				      			</li>
+				      		</ul>
+				      		<div class="tab-content">
+				      			<div class="tab-pane active" id="tab-indicador">
+				      			</div>
+				      			<div class="tab-pane" id="tab-metadatos">
+				      			</div>
+				      		</div>
+				      			
+			              <div id="indicador_contenido"></div>
+			              <div id="descarga_tabla"></div>
+					      <br /><br />	      
+
+					      
+				      </div>
+			    	</div>
+		      	</div>
+		      </div>
+		      
+		      <div class="Accordion-elements" id="AccordionGraficas">
+			      	<div class="Accordion-heading" role="tab">
+				        <div class="Title">
+				            <h2>Gráficas</h2>
+				        </div>
+				        <div class="Accordion-heading-action">
+				            <a data-toggle="collapse" data-parent="#accordion" href="#collapseGraficas1" aria-expanded="true" aria-controls="collapseOne" class="">
+				            </a>
+				        </div>
+			    	</div>
+			    	<div id="collapseGraficas1" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+				      <div class="container">		              
+			          	<div id="div_graficas" style="width:100%">
+				          	<div id="div_botones_graficas" class="switchBtns"></div>
+				          	<div id="div_periodo_gra"></div>
+				          	<div id="div_variable"></div>
+				          	<div id="div_grafica_bb"></div>
+				          	<div id="mapid" ></div>
+				          	<div id="div_desc_graf" style="text-align: right;"></div>
+				          	<div id="div_desc_mapa" style="text-align: right;"></div>
+				          	<div id="div_oculto" style="display:none;"></div>
+				          	<div id="img-out"></div>
+			          	</div>
+			           </div>
+			    	</div>
+		      	</div>
+		      	
+		      	<div class="Accordion-elements" id="AccordionEvidencias">
+			      	<div class="Accordion-heading" role="tab">
+				        <div class="Title">
+				            <h2>Evidencias</h2>
+				        </div>
+				        <div class="Accordion-heading-action">
+				            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEvidencias1" aria-expanded="true" aria-controls="collapseOne" class="">
+				            </a>
+				        </div>
+			    	</div>
+			    	<div id="collapseEvidencias1" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+				      <div class="container">		              
+			          	<div id="evidencia_contenido"></div>
+			           </div>
+			    	</div>
+		      	</div>
+		      	
+		      	
+		      	
+		      	
+		      	
+			</div>
+			
+			
+		      	
+		      	
+		      	
+			<div id="BackTop" style="display: block;" class="in"><a href="#" id="BackTop-action"></a></div>
+		</main>
+		<div id="placeFooter"></div>
+	</body>
+</html>

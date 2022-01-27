@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plataforma de información para el Sistema de Indicadores de Derechos Humanos de la Ciudad de México</title>
+
+	    <link href="/favicon.ico" rel="shortcut icon">
+	    
+	    <link href="css/theme.css" rel="stylesheet">
+		<link href="css/principal.css" rel="stylesheet">
+		<link href="css/hexagons.css" rel="stylesheet" type="text/css" >
+	    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>	
+		
+		<script src="js/lib/d3.js"></script>
+	    <script src="js/lib/jquery-3.3.1.min.js"></script>
+	    <script src="js/lib/vendor.js"></script>
+		<script src="js/lib/framework.js"></script>
+	    <script src="js/idDerechos.js" ></script>
+        <script src="js/tablaDerechos.js" ></script>
+        <script> 
+		    $(function(){
+		      $("#placeHeader").load("Header.html"); 
+		      $("#placeFooter").load("footer.html"); 
+		    });
+	    </script> 
+	</head>
+	<body id="top">
+		<div id="placeHeader"></div>
+		<main>	
+	      <div class="container">
+	      	
+	      		<div class="Accordion-elements">
+		      	<div class="Accordion-heading" role="tab">
+			        <div class="Title">
+			            <h2>
+			                Derechos
+			            </h2>
+			        </div>
+			        <div class="Accordion-heading-action">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseDer0" aria-expanded="true" aria-controls="collapseOne" class="">
+			            </a>
+			        </div>
+		    	</div>
+		    	<div id="collapseDer0" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+		    		<div id="hex_derechos" class="container"></div>
+		    		<div id="espacio_tabla_indicadores" class="container"></div>
+		    	</div>
+	      	</div>
+	      	
+	      	<!-- <div class="Accordion-elements">
+		      	<div class="Accordion-heading" role="tab">
+			        <div class="Title">
+			            <h2>
+			                Derechos
+			            </h2>
+			        </div>
+			        <div class="Accordion-heading-action">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseDer1" aria-expanded="true" aria-controls="collapseOne" class="">
+			            </a>
+			        </div>
+		    	</div>
+		    	<div id="collapseDer1" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+		    		<div id="tabla_derechos" style="width:100%; float:left;"></div>
+		    	</div>
+	      	</div>
+	      	 -->
+	      	
+	      	
+			
+
+		</div>
+		<div id="BackTop" style="display: block;" class="in"><a href="#" id="BackTop-action"></a></div>
+		</main>
+		<div id="placeFooter"></div>
+	</body>
+</html>

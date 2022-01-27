@@ -1,0 +1,139 @@
+Periodo,Motivo,Q,TQ,PQ
+2011,Apariencia fisica,0,2,0
+2011,Color de piel,0,2,0
+2011,Condicion economica,0,2,0
+2011,Condicion juridica,0,2,0
+2011,Condicion social,0,2,0
+2011,Condicion de salud,0,2,0
+2011,Cualquier otra analoga,0,2,0
+2011,Discapacidad,0,2,0
+2011,Edad,1,2,0.5
+2011,Embarazo,0,2,0
+2011,Estado civil,0,2,0
+2011,Genero,0,2,0
+2011,Homofobia,0,2,0
+2011,Identidad de genero,0,2,0
+2011,Nacionalidad,0,2,0
+2011,Opiniones ,0,2,0
+2011,Origen etnico,0,2,0
+2011,Origen nacional,0,2,0
+2011,Por ejercer la maternidad ,0,2,0
+2011,Por ejercer la paternidad,0,2,0
+2011,Preferencia u orientacion sexual,1,2,0.5
+2011,Racial,0,2,0
+2011,Situacion familiar,0,2,0
+2012,Apariencia fisica,1,5,0.2
+2012,Color de piel,0,5,0
+2012,Condicion economica,0,5,0
+2012,Condicion juridica,0,5,0
+2012,Condicion social,1,5,0.2
+2012,Condicion de salud,0,5,0
+2012,Cualquier otra analoga,0,5,0
+2012,Discapacidad,1,5,0.2
+2012,Edad,2,5,0.4
+2012,Embarazo,0,5,0
+2012,Estado civil,0,5,0
+2012,Genero,1,5,0.2
+2012,Homofobia,0,5,0
+2012,Identidad de genero,0,5,0
+2012,Nacionalidad,0,5,0
+2012,Opiniones ,0,5,0
+2012,Origen etnico,0,5,0
+2012,Origen nacional,0,5,0
+2012,Por ejercer la maternidad ,0,5,0
+2012,Por ejercer la paternidad,0,5,0
+2012,Preferencia u orientacion sexual,1,5,0.2
+2012,Racial,0,5,0
+2012,Situacion familiar,0,5,0
+2013,Apariencia fisica,1,4,0.25
+2013,Color de piel,0,4,0
+2013,Condicion economica,0,4,0
+2013,Condicion juridica,0,4,0
+2013,Condicion social,0,4,0
+2013,Condicion de salud,0,4,0
+2013,Cualquier otra analoga,0,4,0
+2013,Discapacidad,4,4,1
+2013,Edad,0,4,0
+2013,Embarazo,0,4,0
+2013,Estado civil,0,4,0
+2013,Genero,0,4,0
+2013,Homofobia,0,4,0
+2013,Identidad de genero,0,4,0
+2013,Nacionalidad,0,4,0
+2013,Opiniones ,0,4,0
+2013,Origen etnico,0,4,0
+2013,Origen nacional,0,4,0
+2013,Por ejercer la maternidad ,0,4,0
+2013,Por ejercer la paternidad,0,4,0
+2013,Preferencia u orientacion sexual,0,4,0
+2013,Racial,0,4,0
+2013,Situacion familiar,0,4,0
+2014,Apariencia fisica,0,2,0
+2014,Color de piel,0,2,0
+2014,Condicion economica,0,2,0
+2014,Condicion juridica,0,2,0
+2014,Condicion social,0,2,0
+2014,Condicion de salud,0,2,0
+2014,Cualquier otra analoga,0,2,0
+2014,Discapacidad,2,2,1
+2014,Edad,0,2,0
+2014,Embarazo,0,2,0
+2014,Estado civil,0,2,0
+2014,Genero,0,2,0
+2014,Homofobia,0,2,0
+2014,Identidad de genero,0,2,0
+2014,Nacionalidad,0,2,0
+2014,Opiniones ,0,2,0
+2014,Origen etnico,0,2,0
+2014,Origen nacional,0,2,0
+2014,Por ejercer la maternidad ,0,2,0
+2014,Por ejercer la paternidad,0,2,0
+2014,Preferencia u orientacion sexual,0,2,0
+2014,Racial,0,2,0
+2014,Situacion familiar,0,2,0
+2015,Apariencia fisica,2,4,0.5
+2015,Color de piel,0,4,0
+2015,Condicion economica,0,4,0
+2015,Condicion juridica,0,4,0
+2015,Condicion social,0,4,0
+2015,Condicion de salud,0,4,0
+2015,Cualquier otra analoga,1,4,0.25
+2015,Discapacidad,0,4,0
+2015,Edad,1,4,0.25
+2015,Embarazo,0,4,0
+2015,Estado civil,0,4,0
+2015,Genero,0,4,0
+2015,Homofobia,0,4,0
+2015,Identidad de genero,0,4,0
+2015,Nacionalidad,0,4,0
+2015,Opiniones ,0,4,0
+2015,Origen etnico,0,4,0
+2015,Origen nacional,0,4,0
+2015,Por ejercer la maternidad ,0,4,0
+2015,Por ejercer la paternidad,0,4,0
+2015,Preferencia u orientacion sexual,0,4,0
+2015,Racial,0,4,0
+2015,Situacion familiar,0,4,0
+2016,Apariencia fisica,1,6,0.166666667
+2016,Color de piel,0,6,0
+2016,Condicion economica,0,6,0
+2016,Condicion juridica,0,6,0
+2016,Condicion social,0,6,0
+2016,Condicion de salud,0,6,0
+2016,Cualquier otra analoga,0,6,0
+2016,Discapacidad,3,6,0.5
+2016,Edad,0,6,0
+2016,Embarazo,0,6,0
+2016,Estado civil,0,6,0
+2016,Genero,1,6,0.166666667
+2016,Homofobia,0,6,0
+2016,Identidad de genero,0,6,0
+2016,Nacionalidad,0,6,0
+2016,Opiniones ,0,6,0
+2016,Origen etnico,0,6,0
+2016,Origen nacional,0,6,0
+2016,Por ejercer la maternidad ,0,6,0
+2016,Por ejercer la paternidad,0,6,0
+2016,Preferencia u orientacion sexual,1,6,0.166666667
+2016,Racial,0,6,0
+2016,Situacion familiar,0,6,0

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plataforma de información para el Sistema de Indicadores de Derechos Humanos de la Ciudad de México</title>
+
+	    <link href="/favicon.ico" rel="shortcut icon">
+	    
+	    <link href="css/generales.css" rel="stylesheet">
+	    <link href="css/theme.css" rel="stylesheet">
+		<link href="css/principal.css" rel="stylesheet">
+		
+	    <script src="js/lib/jquery-3.3.1.min.js"></script>
+	    <script src="js/lib/vendor.js"></script>
+		<script src="js/lib/framework.js"></script>
+		<script src="js/lib/d3.v4.min.js"></script>
+		
+		<script src="js/idDerechos.js"></script>
+		
+		
+        <script> 
+         $(function(){
+        	$("#placeHeader").load("Header.html"); 
+     	    $("#placeFooter").load("footer.html"); 
+		    });
+	    </script> 
+	    <script src="js/busqueda.js"></script>
+		
+	</head>
+	<body id="top">
+		<div id="placeHeader"></div>
+		<main>	
+	      <div class="container">
+	      	
+	      	<div class="Accordion-elements">
+		      	<div class="Accordion-heading" role="tab">
+			        <div class="Title">
+			            <h1>Resultados</h1>
+			        </div>
+			    	<div class="Accordion-heading-action">
+			            <a data-toggle="collapse" data-parent="#accordion" href="#collapseAcerca" aria-expanded="true" aria-controls="collapseOne" class="">
+			            </a>
+			        </div>
+		    	</div>
+		    	<div id="collapseAcerca" class="Accordion-body collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+		    		<div class="Text">
+			    		<div class="row" id="sin_resultados"><h2>No se encontraron resultados para esa búsqueda...</h2></div>
+			    		<div class="row" id="resultados1"></div>
+						<div class="row" id="resultados2"></div>
+						<div class="row" id="resultados3"></div>
+						<div class="row" id="resultados4"></div>
+						<div class="row" id="resultados5"></div>
+						<div class="row" id="resultados6"></div>
+						<div class="row" id="resultados7"></div>
+						<div class="row" id="resultados8"></div>
+					</div>
+		    	</div>
+	      	</div>
+	      	
+	     
+	      	
+			
+
+		</div>
+		<div id="BackTop" style="display: block;" class="in"><a href="#" id="BackTop-action"></a></div>
+		</main>
+		<div id="placeFooter"></div>
+	</body>
+</html>
