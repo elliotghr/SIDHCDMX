@@ -65,7 +65,7 @@ if (isset($_REQUEST['guardar'])) {
     $file_name = basename($url);
 
     //movemos el archivo a la ruta especificada
-    move_file($file_name, $rutaDeArchivo);
+    // move_file($file_name, $rutaDeArchivo);
 
     // pathinfo Devuelve información acerca de la ruta de un fichero
     $info = pathinfo($file_name);
