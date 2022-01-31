@@ -1,0 +1,199 @@
+{
+  "indicator_id": 1,
+  "guid": "PUDH:INDI:AaE01a",
+  "dataset_id": "PUDH:INDI:",
+  "institution_code": "PUDH",
+  "research_code": "INDI",
+  "right_name": "Derecho a la Alimentación Adecuada",
+  "right_key": "A",
+  "right_name_short": "Alimentación",
+  "category_id": 1,
+  "indicator_category_name": "Recepción del derecho",
+  "indicator_category_key": "a",
+  "indicator_type": "Estructural",
+  "indicator_type_short": "Estructural",
+  "indicator_type_code": "E",
+  "indicator_code": "AaE01a",
+  "indicator_sequence": "040104101a",
+  "indicator_name": "Ratificación de Tratados Internacionales que reconocen el Derecho a la Alimentación Adecuada (i)",
+  "indicator_definition": "México se adhirió al Pacto Internacional de Derechos Económicos, Sociales y Culturales.",
+  "right_id": 4,
+  "indicator_type_id": 1,
+  "indicator_category_id": 1,
+  "indicator_formule_code": null,
+  "indicator_calculation_element": null,
+  "indicator_source_formule": null,
+  "indicator_measure_unit": null,
+  "indicator_justification": null,
+  "indicator_reference": null,
+  "indicator_observation": null,
+  "indicator_comments": null,
+  "responsible_institution": null,
+  "modified": "2018-02-20 00:00:00.0",
+  "evidence": [
+    {
+      "evidence_id": 1,
+      "evidence_name": "Pacto Internacional de Derechos Económicos, Sociales y Culturales",
+      "evidence_url": "https://aplicaciones.sre.gob.mx/tratados/muestratratado_nva.sre?id_tratado=256&depositario=0",
+      "indicator_id": 1,
+      "update_date": "2017-01-25",
+      "supplementary_documents": null,
+      "supplementary_documents_url": null,
+      "evidence_observations": null,
+      "institution_evidence_id": 66,
+      "institution_name_evidencie": "Secretaría de Relaciones Exteriores",
+      "institution_code_evidencie": "SRE",
+      "institution_headboard": "0",
+      "validity_year_start": null,
+      "validity_end_start": null,
+      "observation_unit_id": 1,
+      "observation_unit_name": "Pacto",
+      "observation_unit_description": "Pacto",
+      "observation_unit_priorit": 1,
+      "paper": [
+        {
+          "paper_id": 1,
+          "evidence_id": 1,
+          "paper_sequence": "11",
+          "paper_name": "1. Los Estados Partes en el presente Pacto reconocen el derecho de toda persona a un nivel de vida adecuado para sí y su familia, incluso alimentación, vestido y vivienda adecuados, y a una mejora continua de las condiciones de existencia. Los Estados Partes tomarán medidas apropiadas para asegurar la efectividad de este derecho, reconociendo a este efecto la importancia esencial de la cooperación internacional fundada en el libre consentimiento. 2. Los Estados Partes en el presente Pacto, reconociendo el derecho fundamental de toda persona a estar protegida contra el hambre, adoptarán, individualmente y mediante la cooperación internacional, las medidas, incluidos programas concretos, que se necesiten para: a) Mejorar los métodos de producción, conservación y distribución de alimentos mediante la plena utilización de los conocimientos técnicos y científicos, la divulgación de principios sobre nutrición y el perfeccionamiento o la reforma de los regímenes agrarios, de modo que se logre la explotación y la utilización más eficaces de las riquezas naturales; b) Asegurar una distribución equitativa de los alimentos mundiales en relación con las necesidades, teniendo en cuenta los problemas que se plantean tanto a los países que importan productos alimenticios como a los que los exportan."
+        }
+      ],
+      "validity_date_evidence": [
+        {
+          "validity_date_id": 1,
+          "evidence_id": 1,
+          "validity_date": "1966-12-16",
+          "date_type_name": "Firma"
+        },
+        {
+          "validity_date_id": 2,
+          "evidence_id": 1,
+          "validity_date": "1980-12-18",
+          "date_type_name": "Aceptación"
+        },
+        {
+          "validity_date_id": 3,
+          "evidence_id": 1,
+          "validity_date": "1981-01-09",
+          "date_type_name": "Promulgación"
+        },
+        {
+          "validity_date_id": 4,
+          "evidence_id": 1,
+          "validity_date": "1981-03-23",
+          "date_type_name": "Adhesión"
+        },
+        {
+          "validity_date_id": 5,
+          "evidence_id": 1,
+          "validity_date": "1981-03-23",
+          "date_type_name": "Vinculación"
+        },
+        {
+          "validity_date_id": 6,
+          "evidence_id": 1,
+          "validity_date": "1981-05-12",
+          "date_type_name": "Publicación"
+        },
+        {
+          "validity_date_id": 7,
+          "evidence_id": 1,
+          "validity_date": "1981-06-23",
+          "date_type_name": "Entrada en Vigor"
+        }
+      ]
+    }
+  ],
+  "breakdown_group": [
+    {
+      "breakdown_group_id": 7,
+      "breakdown_group_name": "Condición con discapacidad",
+      "indicator_id": 1,
+      "resource_id": "f1c66f48-5160-45d6-851e-8f3ecc2b05ce",
+      "variable_dataset_id": "18b64e85-2b3a-4688-8a72-fd9b6e7d21b8",
+      "breakdown_attribute": "grupo_especifico",
+      "breakdown_attribute_years": null,
+      "breakdown_attribute_result": "porc_pob_carencia_alim",
+      "breakdown_group_year": [
+        "2010",
+        "2012",
+        "2014",
+        "2016"
+      ],
+      "breakdown_resource_id": [
+        "13",
+        "14"
+      ],
+      "breakdown_resource_name": [
+        "poblacion_no_presenta_discapacidad",
+        "poblacion_presenta_discapacidad"
+      ],
+      "graphic": [
+        {
+          "graphic_id": 30,
+          "breakdown_group_id": 7,
+          "graphic_key": "Bre",
+          "graphic_name": "Brecha",
+          "graphic_description": null
+        },
+        {
+          "graphic_id": 51,
+          "breakdown_group_id": 7,
+          "graphic_key": "ColAg",
+          "graphic_name": "Columna Agrupada",
+          "graphic_description": null
+        }
+      ],
+      "breakdown_group_variable": [
+        {
+          "breakdown_group_variable_id": 1,
+          "breakdown_group_id": 7,
+          "variable_id": 1,
+          "variable_breakdown_group_name": "pob_con_carencia_alim_miles",
+          "variable": [
+            {
+              "variable_id": 1,
+              "variable_name": "Personas con carencia por acceso a la alimentación",
+              "variable_source": "Estimaciones del CONEVAL con base en el MCS-ENIGH 2010, 2012 y 2014.",
+              "variable_source_url": "http://www.coneval.org.mx/Medicion/MP/Paginas/AE_pobreza_2014.aspx",
+              "institution_id": 21,
+              "periodicity_id": 6,
+              "query_date": "2017-01-21",
+              "variable_unit_measure": "Miles de personas",
+              "variable_observations": null,
+              "variable_level": "1",
+              "periodicity_name": "Bienal",
+              "periodicity_magnitude": "2",
+              "periodicity_unit": "año",
+              "periodicity_year": [
+                "2010",
+                "2012",
+                "2014",
+                "2016"
+              ],
+              "institution_name_variable": "Consejo Nacional de Evaluación de la Política de Desarrollo Social",
+              "institution_code_variable": "CONEVAL",
+              "institution_headboard_variable": "0",
+              "breakdown": [
+                {
+                  "breakdown_id": 5,
+                  "variable_id": 1,
+                  "breakdown_name": "Jóvenes",
+                  "breakdown_description": "Grupo poblacional entre 12 y 29 años",
+                  "breakdown_rows": "Para población de jóvenes (12 a 29 años)"
+                },
+                {
+                  "breakdown_id": 4,
+                  "variable_id": 1,
+                  "breakdown_name": "Sexo",
+                  "breakdown_description": "Se separan los datos para hombres y mujeres",
+                  "breakdown_rows": "Por sexo"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
