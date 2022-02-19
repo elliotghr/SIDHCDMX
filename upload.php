@@ -62,8 +62,8 @@
               <div class="col-md-8">
                 <article class="result">
                   <?php
-                  include_once("../SIDHCDMX-master/IndividialUpload/conexion.php");
-                  include_once("../SIDHCDMX-master/IndividialUpload/uploadFile.php");
+                  include_once("../SIDHCDMX/IndividialUpload/conexion.php");
+                  include_once("../SIDHCDMX/IndividialUpload/uploadFile.php");
                   ?>
                 </article>
               </div>
@@ -114,8 +114,8 @@
                     <?php endif; ?>
                   </article>
                   <?php
-                  include_once("../SIDHCDMX-master/MultipleUpload/conexion.php");
-                  include_once("../SIDHCDMX-master/MultipleUpload/uploadFile.php");
+                  include_once("../SIDHCDMX/MultipleUpload/conexion.php");
+                  include_once("../SIDHCDMX/MultipleUpload/uploadFile.php");
                   ?>
 
                 </article>
